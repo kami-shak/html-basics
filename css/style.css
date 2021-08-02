@@ -1,0 +1,63 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #272727;
+    font-family: sans-serif;
+}
+.inner-height-neon {
+    background-color: transparent;
+    border: 2px solid #00ccb9;
+    color: #00ccb9;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    position: relative;
+}
+.inner-height-neon .bg-height {
+    background-color: #6bfff1;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    bottom: 0;
+    height: 0%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: height .3s, top .3s;
+    transition: height .3s, top .3s;
+}
+.inner-height-neon .btn-text {
+    z-index: 1;
+}
+
+.inner-height-neon:hover {
+-webkit-box-shadow: 0px 0px 30px 20px #45ffee;
+        box-shadow: 0px 0px 30px 20px #45ffee;
+border-color:#6bfff1;
+}
+
+.inner-height-neon:hover .bg-height {
+height:100%;
+top:0%;
+z-index: -1;
+}
+.inner-height-neon:hover .btn-text {
+    color:#1aa99b
+}
+button{
+        padding: 20px 20px;
+        display: inline-block;
+        color: #000;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 3em;
+        overflow: hidden;
+        border: 2px solid black;
+}
+
